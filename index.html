@@ -14,29 +14,47 @@
         .col {
             margin: 10px;
             width: 300px;
-
         }
     </style>
 
+
 </head>
 
-<body>
+<body class="bg-light bg-gradient">
+
+    <div class="text-center mt-3">
+        <img src="images/images.png" alt="" srcset="">
+    </div>
     <!-- search field -->
-    <section class="bg-gray">
-        <h3 class="text-center text-danger">
+    <section>
+        <h3 class="text-center text-danger fw-bold my-5">
             Search your favourite book here
         </h3>
         <div class="input-group mb-3 w-50 mx-auto">
             <input id="search-field" type="text" class="form-control" placeholder="Search your book"
                 aria-label="Recipient's username" aria-describedby="button-addon2">
-            <button onclick="searchbook()" class="btn btn-outline-secondary" type="button"
+            <button onclick="searchbook()" class="btn btn-outline-secondary bg-success text-white fw-bold" type="button"
                 id="button-search">Button</button>
         </div>
     </section>
 
     <section>
-        <div id="search-number">
+        <!-- error search massage showing part -->
+        <div id="error-message" class="mx-auto w-50 mt-3">
+
+
+
+
         </div>
+
+        <!-- search number showing part -->
+        <div id="search-number" class="bg-dark bg-gradient  w-50 mx-auto text-white fw-bold">
+        </div>
+
+
+
+        </div>
+
         <!-- search result -->
         <div id="search-result" class="row row-cols-1 row-cols-md-3 g-4 my-5 d-flex justify-content-center">
         </div>
