@@ -1,3 +1,5 @@
+// searching book  function
+
 const searchbook = () => {
     const searchField = document.getElementById('search-field');
     const searchText = searchField.value;
@@ -12,6 +14,8 @@ const searchbook = () => {
 
 }
 searchbook();
+
+// displaying book function
 
 const displayBook = books => {
 
@@ -37,7 +41,9 @@ const displayBook = books => {
         BooksArray.slice(0, 20).forEach(book => {
             errorMessage.textContent = '';
 
+            // total search result
             searchNumber.innerHTML = `<h3 class=text-center text-danger>search result found ${books.numFound}</h3>`;
+            // div card for showing book details
             const div = document.createElement('div');
             div.classList.add('col');
             div.innerHTML = `
